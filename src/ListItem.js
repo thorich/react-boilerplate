@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default props => (
-  <li>
-    <h2>{props.title}</h2>
-    <p>{props.id}</p>
-  </li>
-)
+export default function(props) {
+  return (
+    <li className="person">
+      <h2>{props.name}</h2>
+      <p>{props.description}</p>
+    </li>
+  )
+}
